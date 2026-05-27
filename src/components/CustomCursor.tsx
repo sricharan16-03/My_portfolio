@@ -99,7 +99,7 @@ export default function CustomCursor() {
       cancelAnimationFrame(animationFrame);
       clearInterval(interval);
     };
-  }, [visible]);
+  }, [visible, mounted]);
 
   if (!mounted) return null;
 
