@@ -9,6 +9,12 @@ export default function CustomCursor() {
   const [cursorText, setCursorText] = useState("");
   const [visible, setVisible] = useState(false);
 
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   useEffect(() => {
     const dot = dotRef.current;
     const outline = outlineRef.current;
@@ -95,7 +101,7 @@ export default function CustomCursor() {
     };
   }, [visible]);
 
-  if (typeof window === "undefined") return null;
+  if (!mounted) return null;
 
   return (
     <div
