@@ -61,6 +61,28 @@ const PROJECTS_DATA: ProjectItem[] = [
     themeColor: "from-cyber-blue/20 via-obsidian/45 to-[#0b214a]/15",
     accentColor: "rgba(59, 130, 246, 0.45)",
   },
+  {
+    id: "iot-air-pollution",
+    num: "05",
+    title: "IOT AIR POLLUTION MONITORING SYSTEM",
+    description: "Engineered an IoT-based real-time air pollution monitoring system using gas and particulate matter sensors interfaced with a microcontroller. The system continuously measures AQI levels, displays live data on an LCD module, and transmits readings to a cloud dashboard for remote monitoring and historical analysis.",
+    techs: ["Arduino", "MQ-135 Sensor", "ESP8266/NodeMCU", "ThingSpeak", "C/C++"],
+    liveLink: "https://github.com/sricharan16-03",
+    gitLink: "https://github.com/sricharan16-03",
+    themeColor: "from-[#22c55e]/20 via-obsidian/45 to-[#0a3d1f]/15",
+    accentColor: "rgba(34, 197, 94, 0.45)",
+  },
+  {
+    id: "iot-lpg-detection",
+    num: "06",
+    title: "SMART LPG GAS LEAKAGE DETECTION & AUTO-SHUTOFF",
+    description: "Designed and built a smart safety system that detects LPG gas leakage in real-time using an MQ-6 gas sensor and automatically triggers a solenoid valve shutoff mechanism to prevent hazards. Features include SMS/buzzer alerts, an exhaust fan trigger, and a live status dashboard for continuous household safety monitoring.",
+    techs: ["Arduino Uno", "MQ-6 Gas Sensor", "Solenoid Valve", "GSM Module", "IoT"],
+    liveLink: "https://github.com/sricharan16-03",
+    gitLink: "https://github.com/sricharan16-03",
+    themeColor: "from-[#f59e0b]/20 via-obsidian/45 to-[#452c04]/15",
+    accentColor: "rgba(245, 158, 11, 0.45)",
+  },
 ];
 
 // Interactive 3D Card component for Projects
