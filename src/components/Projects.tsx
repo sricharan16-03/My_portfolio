@@ -14,6 +14,7 @@ interface ProjectItem {
   gitLink: string;
   themeColor: string; // Tailwind gradient background
   accentColor: string; // Tailwind hex color glow
+  hideLinks?: boolean;
 }
 
 const PROJECTS_DATA: ProjectItem[] = [
@@ -69,6 +70,7 @@ const PROJECTS_DATA: ProjectItem[] = [
     techs: ["Arduino", "MQ-135 Sensor", "ESP8266/NodeMCU", "ThingSpeak", "C/C++"],
     liveLink: "https://github.com/sricharan16-03",
     gitLink: "https://github.com/sricharan16-03",
+    hideLinks: true,
     themeColor: "from-[#22c55e]/20 via-obsidian/45 to-[#0a3d1f]/15",
     accentColor: "rgba(34, 197, 94, 0.45)",
   },
@@ -80,6 +82,7 @@ const PROJECTS_DATA: ProjectItem[] = [
     techs: ["Arduino Uno", "MQ-6 Gas Sensor", "Solenoid Valve", "GSM Module", "IoT"],
     liveLink: "https://github.com/sricharan16-03",
     gitLink: "https://github.com/sricharan16-03",
+    hideLinks: true,
     themeColor: "from-[#f59e0b]/20 via-obsidian/45 to-[#452c04]/15",
     accentColor: "rgba(245, 158, 11, 0.45)",
   },
@@ -167,6 +170,7 @@ function Project3DCard({ proj }: { proj: ProjectItem }) {
         </div>
 
         {/* Actions links */}
+        {!proj.hideLinks && (
         <div className="flex items-center gap-4">
           {proj.liveLink.startsWith("#") ? (
             <button
@@ -205,6 +209,7 @@ function Project3DCard({ proj }: { proj: ProjectItem }) {
             <span>Codebase</span>
           </a>
         </div>
+        )}
       </div>
 
       {/* Cyberpunk corner brackets */}
