@@ -177,11 +177,9 @@ export default function Contact() {
                 </div>
               </div>
               <a
-                href="#resume-download"
-                onClick={(e) => {
-                  e.preventDefault();
-                  alert("Triggering premium resume download simulation...");
-                }}
+                href="/Sricharan_resume_java.pdf"
+                download="Sricharan_resume_java.pdf"
+                aria-label="Download Sricharan resume"
                 className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-zinc-400 group-hover:border-cyber-teal group-hover:text-cyber-teal hover:bg-white/5 transition-all duration-300"
               >
                 <ArrowUpRight className="w-4 h-4" />
@@ -373,7 +371,7 @@ export default function Contact() {
           <span>DESIGN & ARCHITECTURE // © 2026 CHARAN</span>
           <div className="flex gap-4">
             <span className="hover:text-white transition-colors cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>BACK_TO_TOP</span>
-            <span>//</span>
+            <span>{"//"}</span>
             <span>LATENCY: 14MS</span>
           </div>
         </div>

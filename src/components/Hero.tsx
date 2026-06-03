@@ -226,6 +226,14 @@ export default function Hero() {
                   <Mail className="w-3.5 h-3.5 text-cyber-purple" />
                   <span>Connect Me</span>
                 </button>
+                <a
+                  href="/Sricharan_resume_java.pdf"
+                  download="Sricharan_resume_java.pdf"
+                  className="flex items-center justify-center gap-2 bg-white/[0.04] border border-white/10 hover:border-cyber-teal/40 text-white font-semibold text-[10px] tracking-wider uppercase px-5 py-3.5 rounded-full hover:bg-cyber-teal/10 hover:shadow-[0_0_15px_rgba(20,184,166,0.15)] transition-all duration-300 cursor-pointer w-full sm:w-auto"
+                >
+                  <Download className="w-3.5 h-3.5 text-cyber-teal" />
+                  <span>Download Resume</span>
+                </a>
               </div>
 
               {/* Social Channels Pill Grid */}
@@ -239,7 +247,7 @@ export default function Hero() {
                   <GithubIcon />
                   <span>GitHub</span>
                 </a>
-                <span>//</span>
+                <span>{"//"}</span>
                 <a
                   href="https://www.linkedin.com/in/ch-sricharan-0528b6396"
                   target="_blank"
@@ -249,7 +257,7 @@ export default function Hero() {
                   <LinkedinIcon />
                   <span>LinkedIn</span>
                 </a>
-                <span>//</span>
+                <span>{"//"}</span>
                 <a
                   href="https://leetcode.com/u/Sricharan_ch/"
                   target="_blank"

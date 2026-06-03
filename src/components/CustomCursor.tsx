@@ -9,12 +9,6 @@ export default function CustomCursor() {
   const [cursorText, setCursorText] = useState("");
   const [visible, setVisible] = useState(false);
 
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   useEffect(() => {
     const dot = dotRef.current;
     const outline = outlineRef.current;
@@ -99,9 +93,7 @@ export default function CustomCursor() {
       cancelAnimationFrame(animationFrame);
       clearInterval(interval);
     };
-  }, [visible, mounted]);
-
-  if (!mounted) return null;
+  }, [visible]);
 
   return (
     <div
